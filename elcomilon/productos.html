@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estiloIng.css">
+  <style>
+  .navbar-brand img {
+      height: 60px; /* Ajusta la altura del logo según tu preferencia */
+  }
+  </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- MENU DE OPCIONES -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+
+    </a>
+    <div class="center-image">
+      <img src="imagenes/banner-comilon-fotor-bg-remover-20240515151812.png" alt="Imagen en el centro arriba" style="max-width: 200px;">
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#carritoModal">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Buscar" id="buscador">
+        <button class="btn btn-primary" type="submit" id="btnBuscar">Buscar</button>
+      </form>
+      <button type="button" id="btnAbrirIncioSesion" >
+        <i class="fas fa-user-circle"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- PESTAÑA MODAL PARA EL CARRITO -->
+  <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carritoModalLabel">Tu carrito de compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido del carrito -->
+        <div class="carrito-items">
+          <!-- AQUI SE AGREGAN LOS ELEMNTOS DEL CARRO CON JS -->
+        </div>
+        <div class="carrito-total">
+          <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total">$0</span>
+          </div>
+          <button class="btn-pagar btn btn-primary">Pagar <i class="fas fa-shopping-bag"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container mt-4">
+    <h1 class="text-center">Descubre nuestros productos</h1>
+        <!---PRIMERA FILA DE PRODUCTOS-->
+    <div class="row mt-10">
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagenes/completo.jpg" class="card-img-top" alt="Producto 1" id="imgProductos">
+          <div class="card-body">
+            <h5 class="card-title">Completos</h5>
+            <p class="card-text">Completos italianos o dinamicos</p>
+            <span class="precio-item">$2.500</span>
+            <button class="boton-item btn btn-primary btn-block">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagenes/churrasco.jpg" class="card-img-top" alt="Producto 2" id="imgProductos">
+          <div class="card-body">
+            <h5 class="card-title">Churrasco</h5>
+            <p class="card-text">Churrascos italianos ingredientes a adicionales</p>
+            <span class="precio-item">$4.000</span>
+            <button class="boton-item btn btn-primary btn-block">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagenes/pastelChoclo.jpg" class="card-img-top" alt="Producto 3" id="imgProductos">
+          <div class="card-body">
+            <h5 class="card-title">Pastel de choclo</h5>
+            <p class="card-text">Pastel de choclo con tomate</p>
+            <h7 class="precio-item">$4.500</h7>
+            <button class="boton-item btn btn-primary btn-block">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SEGUNDA FILA CON PRODUCTOS-->
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagenes/cazuela.jpg" class="card-img-top" alt="Producto 2" id="imgProductos">
+          <div class="card-body">
+            <h5 class="card-title">Cazuela</h5>
+            <p class="card-text">Cazuela de vacuno mas ensalada </p>
+            <span class="precio-item">$5.000</span>
+            <button class="boton-item btn btn-primary btn-block">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagenes/pure.jpg" class="card-img-top" alt="Producto 2" id="imgProductos">
+          <div class="card-body">
+            <h5 class="card-title">Pure con salmon</h5>
+            <p class="card-text">Pure con salmon ahumado mas ensalada</p>
+            <span class="precio-item">$9.000</span>
+            <button class="boton-item btn btn-primary btn-block">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagenes/bebidas.jpg" class="card-img-top" alt="Producto 2" id="imgProductos">
+          <div class="card-body">
+            <h5 class="card-title">Bebidas</h5>
+            <p class="card-text">bebida 2 litros</p>
+            <span class="precio-item">$2.500</span>
+            <button class="boton-item btn btn-primary btn-block">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p class="mt-4">&copy; 2024 El Comilon. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="logicaCarro.js"></script>
+  <script src="logicageneral.js"></script>
+</body>
+</html>
+
+
+<!--<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#carritoModal">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+-->

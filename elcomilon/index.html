@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estiloIng.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+
+      </a>
+      <div class="center-image">
+        <img src="imagenes/banner-comilon-fotor-bg-remover-20240515151812.png" alt="Imagen en el centro arriba" style="max-width: 200px;">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Buscar" id="buscador">
+          <button class="btn btn-primary" type="submit" id="btnBuscar">Buscar</button>
+        </form>
+        <button type="button" id="btnAbrirIncioSesion" >
+          <i class="fas fa-user-circle"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="text-center mt-5">
+        <h1>Bienvenidos a El Comilon</h1>
+        <p class="lead">¡Descubre nuestra exquisita variedad de platos y disfruta de una experiencia inolvidable! en El Comilon, nos comprometemos a ofrecerte los mejores ingredientes frescos y una atención impecable para que cada visita sea única.</p>
+    </div>
+
+    <div class="carousel-container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/hamburguesa.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/pizza.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/completo1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="text-center mt-5">
+    <h1>Sobre nosotros</h1>
+    <p class="lead">En Alimentos Santiago, nos enorgullece ofrecer 
+        a nuestros clientes platos preparados con ingredientes frescos y caseros, 
+        cuidadosamente seleccionados para garantizar la mejor calidad en cada bocado.
+        Con nuestro restaurante "El Comilón" ubicado en el corazón de la ciudad, nos esforzamos por 
+        ser el destino preferido para aquellos que buscan una comida sabrosa y reconfortante.
+         Ya sea que desees disfrutar de una deliciosa comida en nuestro acogedor local o prefieras la comodidad de 
+        recibir tu pedido en la comodidad de tu hogar u oficina, estamos aquí para satisfacer tus necesidades culinarias.</p>
+</div>
+
+ <br>
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container mt-50">
+      <h4 class="mb-4">¡Contáctanos!</h4>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo electrónico" id="emailFormulario" required >
+          <h8 id="errorEmail"></h8>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+      
+      <p class="mt-4">&copy; 2024 El Comilon. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="logInicioSesion.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="logicageneral.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

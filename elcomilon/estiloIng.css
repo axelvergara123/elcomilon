@@ -1,0 +1,85 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333333' class='bi bi-list' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M0 1.5A.5.5 0 0 1 .5 1h15a.5.5 0 0 1 0 1H.5A.5.5 0 0 1 0 1.5zm0 5A.5.5 0 0 1 .5 6h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1zm0 5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-item {
+    width: 100%;
+    height: 400px; /* Ajusta esta altura según tu preferencia */
+    overflow: hidden; /* Para asegurarse de que las imágenes no se desborden */
+}
+.carousel-container {
+    width: 50%; /* Ajusta el ancho del contenedor del carrusel */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+  .card {
+    border: none;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 60px;
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #e01e1b;
+    border-color: #e01e1b;
+  }
+  
+  .btn-primary:hover {
+    background-color: #940200;
+    border-color: #940200;
+  }
+  
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  #imgProductos {
+
+    width: 300px;
+    height: 300px;
+  }
+
+  #btnAbrirIncioSesion{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #e01e1b; /* Color de fondo */
+    color: white; /* Color del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+
+  }
+  
+  #btnAbrirIncioSesion :hover{
+    background-color: #940200;
+    border-color: #940200;
+  }
